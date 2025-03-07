@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    background-color: brown;
+}
+ h2 {
+    background-color: goldenrod;
+ }
+ #voltar {     
+    text-align: right;
+ }

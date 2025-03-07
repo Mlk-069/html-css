@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens dinâmicas</title>
+  </head>
+  <body>
+    <picture><source media="(max-width: 750px)" srcset="imagens/Imagem-P.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/Imagem-M.png" type="image/png" />
+      <img src="imagens/Imagem-G.png" alt="Foto flexível" />
+    </picture>
+
+    <h1>Reproduzondo audio</h1>
+    <audio src="media/When The Smoke Clears - Evening Telecast.mp3" controls></audio>
+
+    <h1>Outra maneira de add audio</h1>
+    <audio preload="metadata" controls loop>
+        <source src="media/When The Smoke Clears - Evening Telecast.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio</p>
+    </audio>
+    
+  </body>
+</html>

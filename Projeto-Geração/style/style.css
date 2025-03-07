@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'goblin';
+    src: url('/font/GoblinOne-Regular.ttf'), format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('/font/Roboto-VariableFont_wdth,wght.ttf'), format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor1: #AE2F1E ;
+    --cor2: #F15D3F;
+    --cor3: #367F78;
+    --cor4: #DDC058;
+    --cor5: #FECB01;
+    --cor6: #e4a396;
+    
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-especial: 'goblin';
+    --font-especial2: 'roboto';
+}
+body {
+    background-color: #ee8e7b;
+}
+header {
+    height: 120px;
+    background-image: linear-gradient(to right, #AE2F1E, #367F78);
+    padding: 10px;
+    color: white;
+    text-shadow: 0px 1px 5px white;
+}
+header h1 {
+    padding-bottom: 15px;
+    font-family: var(--fonte-especial);
+}
+header p {
+    text-align: center;
+    text-shadow: 0px 1px 6px white;
+}
+nav {
+    box-shadow: 0px 2px 10px black;
+    padding: 0px 20px;
+    background-image: linear-gradient(to right, #AE2F1E, #367F78);
+}
+nav a {
+    font-weight: bold;
+    font-family: 'roboto';
+    color: white;
+    transition-duration: .8s;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px 15px;
+    text-shadow: 0px 2px 10px white;
+}
+nav a:hover {
+    text-shadow: 0px 5px 10px black;
+    color: black;
+    background-color: var(--cor6);
+}
+
+main {
+    border-radius: 5px 5px 5px 5px  ;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 5px;
+    background-color: white;
+    margin: auto;    
+    margin-top: 2px;
+    max-width: 900px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.699);
+}
+main p {
+    padding-bottom: 10px;
+}
+main article {
+    border-radius: 10px;
+    background-color: #e4a396;
+    columns: 2;
+    box-shadow: 0px 2px 10px black;
+}
+main ul{
+    list-style: inside;
+    
+}
+li#vocalista {
+    list-style-type: '\1F3A4\00A0';
+}
+li#tecladista {
+    list-style-type: '\1F3B9\00A0';
+}
+li#guitarrista {
+    list-style-type: '\1F3B8\00A0';
+}
+li#baterista {
+    list-style-type: '\1F941\00A0';
+}
+li#baxista {
+    list-style-type: '\1F3BC\00A0';
+}
+li#mais {
+    list-style-type: '\2795\00A0';
+}
+li.midia {
+    list-style-type: '\1F310\00A0';
+}
+li#last{
+    padding-bottom: 3px;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.253);
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+footer a {
+    margin: auto;
+    padding: 0px 10px;
+}

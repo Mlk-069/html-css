@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root{
+    --font: 'Caveat';
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -11,7 +17,11 @@ header{
     color: white;
     background-color: black;
 }
+header p {
+    max-width: 100%;
+}
 header a {
+    font-size: .9em;
     text-shadow: 0px 2px 10px ;
     color: white;
     text-decoration: none;
@@ -20,10 +30,64 @@ header a {
     padding:  2px 5px;
 }
 header a:hover{
+    font-size: 1.0em;
+    text-shadow: 0px 2px 4px;
     color: black;
     background-color: white;
 }
 header a::after{
     content: '\1F517';
     text-shadow: 0px 1px 2px;
+}
+main{
+    min-width: 320px;
+    font-size: 1.5em;
+    font-family: var(--font);
+    font-weight: bold;
+}
+div {
+    padding: 20px;
+}
+div#prph02{
+    background-image: url('/Projeto Parallax/image/pattern004.png');
+    background-position: center;
+    background-attachment: fixed;
+}
+div#prph04 {
+    background-attachment: fixed;
+    background-position: center right;
+    background-image: url('/Projeto Parallax/image/wallpaper002.jpg');
+}
+p.image {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+p {
+    min-width: 320px;
+    max-width: 500px;
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: black;
+}
+footer a{
+    padding: 0px  2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 2px 4px;
+    transition-duration: .8s;
+}
+footer a:hover {
+    text-shadow: 0px 2px 4px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+footer a::after {
+    content: '\1F517';
 }
